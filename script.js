@@ -1,7 +1,6 @@
 const h1 = document.querySelector('h1');
 const speedInput = document.querySelector('input');
-const arr = 'We love Programming!'.split('');
-console.log(arr);
+const heading = 'We love Programming!'
 
 
 let intervalId
@@ -14,14 +13,14 @@ function changeText(){
   let currentIndex = 0; 
 
    intervalId = setInterval(() => {
-     if(arr[currentIndex] === ' '){
+     if(heading[currentIndex] === ' '){
          h1.innerText += '\u00A0'
      }
-     else  h1.innerText += arr[currentIndex]
+     else  h1.innerText += heading[currentIndex]
       console.log(h1.innerText)
     currentIndex++;
 
-    if (currentIndex === arr.length) {
+    if (currentIndex === heading.length) {
       setTimeout(() => {
         h1.innerText = ''; 
       }, 0);
