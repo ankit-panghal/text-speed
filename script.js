@@ -9,20 +9,17 @@ speedInput.addEventListener('change', changeText);
 
 function changeText(){
   clearInterval(intervalId)
-  h1.innerText = ''; 
+  h1.innerHTML = ''; 
   let currentIndex = 0; 
 
    intervalId = setInterval(() => {
-     if(heading[currentIndex] === ' '){
-         h1.innerText += '\u00A0'
-     }
-     else  h1.innerText += heading[currentIndex]
-      console.log(h1.innerText)
+    h1.innerHTML += heading[currentIndex]
+      console.log(h1.innerHTML)
     currentIndex++;
 
     if (currentIndex === heading.length) {
       setTimeout(() => {
-        h1.innerText = ''; 
+        h1.innerHTML = ''; 
       }, 0);
       currentIndex = 0;
     }
