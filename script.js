@@ -5,7 +5,7 @@ const heading = 'We love Programming!'
 
 let intervalId
 window.onload = changeText()
-speedInput.addEventListener('change', changeText);
+speedInput.addEventListener('input', changeText);
 
 function changeText(){
   clearInterval(intervalId)
