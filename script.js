@@ -14,7 +14,6 @@ function changeText(){
 
    intervalId = setInterval(() => {
     h1.innerHTML += heading[currentIndex]
-      console.log(h1.innerHTML)
     currentIndex++;
 
     if (currentIndex === heading.length) {
